@@ -1,0 +1,103 @@
+/*
+Simple concept game. work both on C++ and C# to get my skills back up again
+
+concept.
+
+create planets out of a file, or other media
+when game starts it sets those files
+
+planet.exe
+resource.exe
+
+it then asks for what player
+
+players are stored ine playerName.exe
+there the name for the file gives. then the players stored in players/playerName/playerData.exe
+it then gets the players data back. each time a player is created, the files for the planets above are copied and trainsported in
+players/playerName
+
+this data is saved when one saves the game ONLY. not when closing the game.
+
+
+seconds. data for planets is
+
+string name
+string xcordinate/ycordinate
+number size
+number population
+number spaceports
+number ships
+string type
+number age (when created)
+
+string[] resources in this format
+
+(type, name, amount, min amount, gain, gain multiplier, loss, loss multiplier, stored, max stored, max sold)
+
+//when a planet goes over the amount, nothing happens. that resource is just lost but caluclate and store it anyway. 
+could be ussefull
+
+when the gain is calucalted by setting whats gained - loss. thats gone out or added to stored
+
+then ship
+
+string name
+string type
+string xcordinate/ycordinate
+number speed
+numver size
+string owner
+string[] all the resources aboard.
+number exp
+
+player
+string name
+string shipName
+number coinAmount
+string heading(xcordinate/ycordinate)
+
+then data shown. when on a planet you ahve this data
+- name of planet
+- market (where it shows how much they sell, or what they need. for now just how much until their stores are full.)
+- optioon to show map
+- option to show planet list by 10 (type the number and then you go there, or else type back to go back)
+
+everything you say is added to the playerName/log.exe
+if an error occurs, like (oh too much) thats added as well and shown in the terminal.
+
+THATS IT. after that there is nothing happening. because no time goes on.
+
+time
+
+each unit caluclates the movements of the ship. based on the player info
+then it calculates the data from all the planets.
+then it shows if you are on that splot, if so. you get the info from that planet
+
+and thats it, between each calulation there is a 2 second wait period. so if a planet is like... 200 units away and you're at the speed of one unit
+it means it takes 400 seconds or roughtly 5 1/2 minutes to get there.
+during this time you can press "console" and it will get your ship console. you can then get
+
+- cordinate location
+- map of galaxy
+- list of planets
+
+and set a new heading if neccecary
+
+
+plans.
+
+- each planet has more than one resource
+- better storing of data
+- save option
+- upgrade ships at ports
+- ship level
+- hazards on the map (when touched, you lose health, but there is a chance it happens. you can choose between options
+what you want to do. safe option, but takes longer, fast option, but higher risk)
+- meteor belt
+- black hole
+- battle
+- disruption
+- upgrades for hazards improves chances. increase speeds
+- crew to increase chances
+*/
+
